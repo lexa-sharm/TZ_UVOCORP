@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите его</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a>.</p>
+	<![endif]-->
+	<div class="wrapper">
+	<header class="header clearfix">
+
+		<div class="menu-block left">
+			<div class="main-logo"><a href="#"><img src="img/logo.png" alt="ProWrite"></a></div>
+			<div class="menu-wrap">
+				<ul class="menu-items">
+					<li class="menu-item"><a href="#">Orders</a></li>
+					<li class="menu-item"><a href="#">Support</a></li>
+					<li class="menu-item">
+						<a href="#">Balance</a>
+						<div class="header-price">
+							<span class="price-main">$40.99</span> / <span class="price-secondary">$199.50</span>
+						</div>
+					</li>
+				</ul>
+				<div class="menu-toggle">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="user-block right">
+			<div class="neworder-btn">
+				<a href="#">+  New Order</a>
+			</div>
+			<div class="user-wrap">
+				<div class="user-login"></div>
+				<div class="user-dropdown">
+					<ul class="user-dropdown-list">
+						<li class="user-dropdown-item">somemail@mail.com</li>
+						<li class="user-dropdown-item"><a href="#">Profile & Settings</a></li>
+						<li class="user-dropdown-item"><a href="#">Referals</a></li>
+						<li class="user-dropdown-item"><a href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<nav class="hidden">
+			<ul role="navigation">
+				<li class="menu-item"><a href="#">Orders</a></li>
+				<li class="menu-item"><a href="#">Support</a></li>
+				<li class="menu-item">
+					<a href="#">Balance</a>
+					<div class="header-price">
+						<span class="price-main">$40.99</span> / <span class="price-secondary">$199.50</span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main class="content">
+		<div class="container">
+			<div class="orders-head">
+				<p>My orders</p>
+			</div>
+			<div class="orders-wrap">
+				<div class="orders-filter">
+					<ul class="orders-filter-list">
+						<li class="orders-filter-item active" data-progress-filter="recent"><a href="#">Recent</a></li>
+						<li class="orders-filter-item" data-progress-filter="finished"><a href="#">Finished</a></li>
+						<li class="orders-filter-item" data-progress-filter="canceled"><a href="#">Canceled</a></li>
+					</ul>
+				</div>
+				<div class="orders-list">
+					<ul class="orders-items">
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">What is State Regulations? Why is it so long name of this topic? Oh, sometimes it happens.</a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress progress" data-progress-item="recent">
+								<p class="progress-title">Progress (<span class="ready">1</span> of <span class="total">5</span> pages)</p>
+								<div class="progress-wrap" data-progress-percent="20">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">Dec 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user">
+								<div class="user-avatar">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">writer_name</a></div>
+								<p class="user-info">553 completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">Microeconomic</a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress bidding" data-progress-item="recent">
+								<p class="progress-title">Bidding</p>
+								<div class="progress-wrap" data-progress-percent="100">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">May 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user">
+								<div class="user-avatar no-user">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">writer_name</a></div>
+								<p class="user-info"><span>553</span> completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">What is State Regulations?</a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress cancell" data-progress-item="recent,canceled">
+								<p class="progress-title">Cancelled automatically</p>
+								<div class="progress-wrap" data-progress-percent="100">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">Jun 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user ">
+								<div class="user-avatar online">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">writer</a></div>
+								<p class="user-info"><span>1043</span> completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">Some very interesting topic name</a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress progress" data-progress-item="recent">
+								<p class="progress-title">Progress (1 of 5 pages)</p>
+								<div class="progress-wrap" data-progress-percent="20">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">Jul 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user">
+								<div class="user-avatar">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">Long_writer_name</a></div>
+								<p class="user-info"><span>3</span> completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">WOW! </a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress bidding" data-progress-item="recent">
+								<p class="progress-title">Bidding</p>
+								<div class="progress-wrap" data-progress-percent="100">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">Aug 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user">
+								<div class="user-avatar no-user">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">writer_name</a></div>
+								<p class="user-info"><span>553</span> completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">I don`t know what to write here :(</a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress progress" data-progress-item="recent">
+								<p class="progress-title">Progress (1 of 5 pages)</p>
+								<div class="progress-wrap" data-progress-percent="20">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">Sep 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user">
+								<div class="user-avatar online">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">some_writer</a></div>
+								<p class="user-info"><span>55</span> completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+
+						<li class="orders-item">
+							<div class="order-title">
+								<h3 class="order-caption"><a href="#">The last! </a></h3>
+								<p class="order-category">#2453534, Psychology and Education, Argumentative essay</p>
+							</div>
+
+							<div class="order-progress finished" data-progress-item="recent,finished">
+								<p class="progress-title">Finished</p>
+								<div class="progress-wrap" data-progress-percent="20">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+
+							<div class="order-deadline">
+								<p class="deadline-title">Deadline in 4 days</p>
+								<p class="deadline-time"><span class="date">May 28</span>, <span class="time">11:59 AM</span></p>
+							</div>
+
+							<div class="order-user">
+								<div class="user-avatar no-user">
+									<div class="avatar-wrap">
+										<a href="#"><img src="img/avatar.jpg" alt="avatar"></a>
+									</div>
+									<div class="bids">
+										<p>25</p>
+										<p>bids</p>
+									</div>
+								</div>
+								<div class="user-title"><a href="#">some_writer</a></div>
+								<p class="user-info"><span>55</span> completed orders</p>
+							</div>
+
+							<div class="order-price">
+								<p class="price-title">$<span>1250</span></p>
+								<p class="price-secondary">$<span>100</span> paid</p>
+							</div>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-menu left">
+				<ul class="footer-menu-items">
+					<li class="footer-menu-item"><a href="">About Us</a></li>
+					<li class="footer-menu-item"><a href="">How It Works?</a></li>
+					<li class="footer-menu-item"><a href="">FAQ for Customers</a></li>
+					<li class="footer-menu-item"><a href="">FAQ for Customers</a></li>
+					<li class="footer-menu-item"><a href="">Money Back Guarantee</a></li>
+				</ul>
+				<ul class="footer-menu-items">
+					<li class="footer-menu-item"><a href="">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="">Contact Us</a></li>
+					<li class="footer-menu-item"><a href="">User Reviews</a></li>
+					<li class="footer-menu-item"><a href="">Topic Suggestion</a></li>
+					<li class="footer-menu-item"><a href="">Confidentiality Policy</a></li>
+				</ul>
+			</div>
+
+			<div class="shop-block right">
+				<div class="left-shop">
+					<a href=""><img src="img/norton.png" alt="Norton"></a>
+				</div>
+				<div class="right-shop">
+					<a href=""><img src="img/app_store.png" alt="App Store"></a>
+					<a href=""><img src="img/google_play.png" alt="Google Play"></a>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div class="copyright">
+				<p>© 2011 — 2017, ProWrite</p>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>

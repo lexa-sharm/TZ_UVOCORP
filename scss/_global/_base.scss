@@ -1,0 +1,54 @@
+/*
+================================================================================
+|                                     base                                     |
+================================================================================
+*/
+
+// main: ../main.scss
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: normal;
+	background-color: $bg-body;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+	@include clearfix;
+	background-color: #ffffff;
+	border-left: 1px solid $border-order;
+	border-right: 1px solid $border-order;
+	border-bottom: 1px solid $border-order;
+	@include border-radius(5px);
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+.wrapper {
+	min-height: 100%;
+	padding-bottom: 180px;
+}
+
+footer {
+	width: 100%;
+	height: 175px;
+	margin-top: -175px;
+}

@@ -1,0 +1,245 @@
+/*
+================================================================================
+|                                   CONTENT                                     |
+================================================================================
+*/
+
+
+.orders-head {
+	padding: 19px 35px 23px 35px;
+	background-color: $bg-orders-head;
+	font-size: 30px;
+	line-height: normal;
+	font-weight: lighter;
+	color: #ffffff;
+	border: 1px solid #1a3674;
+}
+
+.orders-wrap {
+	padding: 0 35px;
+}
+
+
+.orders-filter {
+	margin-bottom: 23px;
+	width: 100%;
+	border-bottom: 1px solid #d4d4d4;
+	.orders-filter-item {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.orders-filter-item a {
+		display: inline-block;
+		padding: 12px 23px;
+		font-size: 14px;
+		color: $color-link;
+		vertical-align: middle;
+	}
+	.orders-filter-item.active a {
+		color: #010101;
+		font-weight: bold;
+	}
+	.orders-filter-item.active::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 3px;
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		background-color: #0080d1;
+	}
+}
+
+
+.orders-list {
+	padding-bottom: 30px;
+	.orders-item > div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.orders-item {
+		margin-bottom: 5px;
+		padding: 12px 20px;
+		border: 1px solid $border-order;
+		@include border-radius(3px);
+
+
+		.order-title {
+			width: 39%;
+			margin-right: 15px;
+			.order-caption {
+				margin-bottom: 6px;
+				a {
+				font-weight: bold;
+				color: $color-link;
+				}
+			}
+			.order-category {
+				font-size: 12px;
+				color: $color-secondary-gray;
+			}
+		}
+
+
+		.order-progress {
+			width: 14.7%;
+			margin-top: -3px;
+			margin-right: 25px;
+			.progress-title {
+				margin-bottom: 12px;
+				color: $color-progress;
+			}
+			.progress-wrap {
+				width: 100%;
+				height: 8px;
+				background-color: #f1f1f1;
+				@include border-radius(4px);
+				.progress-bar {
+					width: 20%;
+					height: 100%;
+					@include border-radius(4px);
+				}
+			}
+			&.progress {
+				.progress-bar {
+					background-color: #0080d1;
+				}
+			}
+			&.bidding {
+				.progress-bar {
+					width: 100%;
+					background-color: #94ebea;
+				}
+			}
+			&.cancell {
+				.progress-bar {
+					width: 100%;
+					background-color: #ffb5b5;
+				}
+			}
+			&.finished {
+				.progress-bar {
+					width: 100%;
+					background-color: #00a31b;
+				}
+			}
+		}
+
+
+		.order-deadline {
+			width: 13%;
+			margin-right: 8px;
+			.deadline-title {
+				margin-bottom: 7px;
+				font-weight: bold;
+				color: $color-deadline-title;
+			}
+			.deadline-time {
+				color: $color-secondary-gray;
+			}
+		}
+
+
+		.order-user {
+			position: relative;
+			width: 18%;
+			padding-left: 55px;
+			margin-right: 20px;
+			.user-avatar {
+				width: 45px;
+				height: 45px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -22.5px;
+				text-align: center;
+				a {
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					img {
+						margin: 0 0 0 -10%;
+						height: 100%;
+					}
+				}
+				> .bids {
+					display: none;
+				}
+				.avatar-wrap {
+					width: 100%;
+					height: 100%;
+					background-color: #9ca1b2;
+					@include border-radius(50%);
+					text-align: center;
+					overflow: hidden;
+				}
+				&.no-user {
+					background-color: #ffffff;
+					.avatar-wrap {
+						display: none;
+					}
+					> .bids {
+						display: block;
+						p:first-child {
+							font-size: 22px;
+							font-weight: bold;
+							color: $color-deadline-title;
+						}
+						p:last-child {
+							font-size: 12px;
+							color: $color-secondary-gray;
+						}
+					}
+					~ .user-title {
+						display: none;
+					}
+					~ .user-info {
+						display: none;
+					}
+				}
+				&.online {
+					&::after {
+						content: '';
+						display: block;
+						width: 14px;
+						height: 14px;
+						position: absolute;
+						right: 1px;
+						bottom: -2px;
+						background: url(../img/sprite.png) no-repeat;
+						background-position: 0 -196px;
+					}
+				}
+			}
+			.user-title {
+				margin-bottom: 8px;
+				word-wrap: break-word;
+				a {
+					font-weight: bold;
+					color: $color-link;
+				}
+			}
+			.user-info {
+				font-size: 12px;
+				color: $color-secondary-gray;
+			}
+		}
+
+
+		.order-price {
+			.price-title {
+				margin-bottom: 8px;
+				color: $color-deadline-title;
+				font-weight: bold;
+			}
+			.price-secondary {
+				color: $color-secondary-gray;
+			}
+		}
+	}
+	.orders-item:hover {
+		border-color: $border-order-hover;
+	}
+}

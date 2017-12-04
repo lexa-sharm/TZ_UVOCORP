@@ -1,0 +1,55 @@
+/*
+================================================================================
+|                                     FOOTER                                     |
+================================================================================
+*/
+
+.footer {
+	.container {
+		padding: 0 35px;
+		background-color: transparent;
+		border: none;
+	}
+	.footer-menu {
+		.footer-menu-items {
+			display: inline-block;
+			vertical-align: top;
+			a {
+				display: block;
+				padding: 4px 0;
+				color: $color-footer-menu;
+			}
+			&:first-child {
+				margin-right: 80px;
+			}
+		}
+	}
+
+	.shop-block {
+		font-size: 0;
+		margin-right: 25px;
+		> div {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.left-shop {
+			margin-right: 65px;
+			border: 1px solid $border-order;
+			border-radius: 3px;
+			overflow: hidden;
+		}
+		.right-shop {
+			a {
+				display: block;
+				&:first-child {
+					margin-bottom: 12px;
+				}
+			}
+		}
+	}
+
+	.copyright {
+		margin-top: 13px;
+		color: #979797;
+	}
+}

@@ -1,0 +1,15 @@
+//out: ../css/style.css
+
+//Global
+@import "_global/_reset.scss";
+@import "_global/_variables.scss";
+@import "_global/_fonts.scss";
+@import "_global/_mixin.scss";
+@import "_global/_base.scss";
+
+//Components
+
+@import "_components/_header.scss";
+@import "_components/_content.scss";
+@import "_components/_footer.scss";
+@import "_components/_responsive.scss";

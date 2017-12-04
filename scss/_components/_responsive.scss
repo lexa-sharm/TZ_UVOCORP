@@ -1,0 +1,228 @@
+/*
+================================================================================
+|                                RESPONSIVE                                     |
+================================================================================
+*/
+
+
+@media screen and (max-width: 1050px) {
+
+	.orders-list .orders-item {
+		.order-title {
+			width: 37%;
+		}
+		.order-progress {
+			margin-right: 15px;
+		}
+		.order-user {
+			margin-right: 15px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 860px) {
+
+	.header {
+		padding: 0 20px 0 20px;
+		.menu-block {
+			.main-logo {
+				margin-right: 5px;
+			}
+			.menu-item a {
+				padding: 27px 10px;
+			}
+		}
+		.user-block .neworder-btn a {
+			padding: 10px 10px;
+		}
+	}
+
+
+	.orders-wrap {
+		padding: 0 25px;
+	}
+	.orders-list .orders-item {
+		padding: 12px 10px;
+		.order-title {
+			width: 33%;
+		}
+	}
+
+
+	.footer {
+		.container {
+			padding: 0 25px;
+		}
+		.footer-menu .footer-menu-items:first-child {
+			margin-right: 20px;
+		}
+		.shop-block {
+			margin-right: 15px;
+			.left-shop {
+				margin-right: 35px;
+			}
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+	.header {
+		padding: 0 20px 0 20px;
+		.menu-block {
+			margin-top: 23px;
+			.main-logo {
+				margin-right: 25px;
+			}
+			.menu-wrap {
+				position: relative;
+				width: 35px;
+				height: 25px;
+			}
+			.menu-items {
+				display: none;
+			}
+			.menu-toggle {
+				display: block;
+			}
+		}
+		.user-block .neworder-btn a {
+			padding: 10px 10px;
+		}
+	}
+
+	.orders-list .orders-item {
+		padding: 12px 10px;
+		.order-title {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.order-progress,.order-deadline, .order-user {
+			width: 25%;
+		}
+	}
+
+	.footer {
+		text-align: center;
+		.footer-menu {
+			float: none;
+			display: inline-block;
+			text-align: left;
+			margin-bottom: 20px;
+			.footer-menu-items:first-child {
+				margin-right: 55px;
+			}
+		}
+		.shop-block {
+			float: none;
+			margin-right: 0;
+		}
+		.copyright {
+			padding-bottom: 20px;
+		}
+
+	}
+}
+
+
+
+@media screen and (max-width: 530px) {
+
+	.orders-list .orders-item {
+		padding: 12px 20px;
+		overflow: hidden;
+		.order-title {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+			border-bottom: 1px solid #000;
+		}
+		.order-progress,.order-deadline, .order-user, .order-price {
+			display: block;
+			width: 60%;
+			margin: 0 auto;
+			padding-top: 10px;
+		}
+		.order-title, .order-progress,.order-deadline, .order-user {
+			position: relative;
+			padding-bottom: 10px;
+			&::after {
+				content: '';
+				display: block;
+				width: 1000px;
+				height: 1px;
+				position: absolute;
+				left: -100%;
+				bottom: -1px;
+				background-color: $border-order;
+			}
+		}
+		.order-user .user-avatar.no-user {
+			position: static;
+			margin-top: 0;
+			margin-left: -55px;
+			text-align: left;
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+	.header {
+		.menu-block {
+			margin-top: 23px;
+			.main-logo {
+				width: 80px;
+				margin-right: 10px;
+				a {
+					width: 100%;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.user-block .neworder-btn {
+			margin-right: 5px;
+			a {
+				padding: 10px 5px;
+			}
+		}
+	}
+
+	.orders-filter .orders-filter-item a {
+		padding: 12px 15px;
+	}
+	.orders-list .orders-item {
+		.order-progress,.order-deadline, .order-user, .order-price {
+			width: 80%;
+		}
+	}
+
+	.footer {
+		.footer-menu {
+			text-align: center;
+			.footer-menu-items {
+				display: block;
+			}
+			.footer-menu-items:first-child {
+				margin-right: 0;
+			}
+		}
+		.shop-block {
+			.left-shop {
+				display: block;
+				margin-right: 0;
+				margin-bottom: 12px;
+				border: none;
+			}
+		}
+	}
+
+}
